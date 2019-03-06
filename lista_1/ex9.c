@@ -13,9 +13,9 @@ int main(){
         //Coleta os dados dos carros
         printf("Digite o modelo do %d.o carro\n", x+1);
         scanf(" %s", modelo);
-        printf("Digite a cor do %d.o carro\n");
+        printf("Digite a cor do %d.o carro\n", x+1);
         scanf(" %s", cor);
-        printf("Digite a placa do %d.o veículo\n");
+        printf("Digite a placa do %d.o veículo\n", x+1);
         scanf(" %s", placa);
         //Conta caracteres
         for(int y=0; y<80; y++){
