@@ -4,8 +4,10 @@
 #include <stdio.h>
 int main(){
     int x, n, y=0;
+     //Pega o valor de x
     printf("Digite um valor pra x\n");
     scanf("%d", &x);
+   //Calcula y
     for(n=1; n<=100; n++){
         y = y + (x+n);
     }
