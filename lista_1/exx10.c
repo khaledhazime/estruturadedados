@@ -47,7 +47,8 @@ int main(){
         //Se todos os campos chegarem a zero, encerra o programa
         if(seg == 0 && min == 0 && hor == 0){
             system("clear");
-            printf("O tempo acabou\n");
+            printf("\n00:00:00");
+            printf("\nO tempo acabou\n");
             return 0;
         }
         system("clear");
@@ -58,6 +59,7 @@ int main(){
             min--;
             seg = seg+60;
         }
+        //Quando os minutos chegarem em 59, incrementa 1 para as horas e tira 1 minuto
         if(min<0){
             hor--;
             min = min+60;
