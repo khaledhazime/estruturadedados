@@ -6,7 +6,7 @@
 int main() {
   
   int i, x; 
-  int div = 0;
+  int c = 0;
  //Varia o número de 1 até 1000 
   for(x=1; x<=1000; x++){
       //Inicializa o contador em 0 em cada loop
