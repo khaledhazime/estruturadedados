@@ -9,12 +9,14 @@ int main(){
         Divisor como 1, somando 1 todo loop (1, 2, 3, 4)
         Quando o n é par, ele soma no resultado
         Quando o n é impar, ele diminui no resultado */
-    for(n = 0, dividendo=1000, divisor = 1; n<=50; n++, dividendo-3, divisor++){
+    for(n = 1, dividendo=1000, divisor = 1; n<=50; n++, dividendo-3, divisor++){
         if(n%2==0){
             result = result + dividendo/divisor;
+	printf("%d, if, %f\n", n,result);
         }
         else{
             result = result - dividendo/divisor;
+	printf("%d, else, %f\n", n,result);
         }
     }
     printf("O resultado é: %.2f\n", result);
