@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char s[100];
+    char c;
+    int pos = 0;
+    printf("Insira uma string\n");
+    scanf("%s", s);
+    printf("Insira um caractere\n");
+    scanf(" %c", &c);
+    pos = strchr(s,c) - s;
+    printf("%d\n", pos+1);
+}
