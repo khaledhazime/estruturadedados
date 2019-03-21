@@ -9,6 +9,12 @@ int main(){
     scanf("%s", s);
     printf("Insira um caractere\n");
     scanf(" %c", &c);
-    pos = strchr(s,c) - s;
-    printf("%d\n", pos+1);
+    pos = strchr(s+3,c) - s;
+   
+    if(pos>strlen(s)){
+     printf("Não existe\n");
+    }
+    else{
+     printf("A primeira posição é %d\n", pos+1);
+    }
 }
