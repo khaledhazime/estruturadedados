@@ -1,15 +1,20 @@
+/*1) Escreva uma função que receba uma string s e 
+um caractere c e devolva o índice da primeira 
+posição de s que é igual a c.*/
 #include <stdio.h>
 #include <string.h>
 
 int main(){
     char s[100];
     char c;
-    int pos = 0;
+    int pos = 0, p;
     printf("Insira uma string\n");
     scanf("%s", s);
     printf("Insira um caractere\n");
     scanf(" %c", &c);
-    pos = strchr(s+3,c) - s;
+    printf("Insira uma posicao\n");
+    scanf(" %d", &p);
+    pos = strchr(s+p,c) - s;
    
     if(pos>strlen(s)){
      printf("Não existe\n");
