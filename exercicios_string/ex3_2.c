@@ -19,4 +19,6 @@ int main(){
     cp[x] = '\0';
     printf("%s", cp);
     printf("\n");
+    printf("%s", s);
+    printf("\n");
 }
