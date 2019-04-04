@@ -6,7 +6,7 @@ em uma string t. */
 #include <string.h>
 int main(){
     char s[100], p[100];
-    int c=0;
+    int c=0, t=0;
     printf("Digite a primeira palavra\n");
     scanf(" %s", p);
     printf("Digite a segunda palavra\n");
@@ -21,9 +21,11 @@ int main(){
         return 0;
     }
     //2) Se a string for exatamente igual a frase, conta 1 ocorrência e encerra o programa:
-    if(strcmp(s,p)){
+    /*if(strcmp(s,p)){
         c++;
-    }
+        printf("%d", c);
+        return 0;
+    }*/
     //3) Percorre a primeira string até encontrar uma letra igual à segunda string:
     for(int i=0, aux; i<(strlen(p)-strlen(s)); i++){
         //Se encontra a primeira letra, verifica se na sequência vem as letras seguintes
@@ -37,19 +39,26 @@ int main(){
             for(int j=0; j<strlen(s); j++){
                 if(s[j]==p[aux]){
                     //Caso for igual, insere 1 no vetor temporário
-                    temp[j]=1;
+                    t=1;
                     aux++;
+                }
+                else{
+                   t=0;
+                   j=strlen(s);
                 }
             }
         }
         //Verifica se o vetor temporário é composto apenas por números 1:
-        for(int i=0, j=0; i<strlen(p); i++){
+      /*  for(int i=0, j=0; i<strlen(p); i++){
             if(temp[i]==1){
                 j++;
             }
             if(j==strlen(s)){
                c++; 
             } 
+        }*/
+        if(t){
+            c++;
         }
     }
     printf("O numero de ocorrências é: %d\n", c);
