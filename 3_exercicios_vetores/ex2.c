@@ -15,6 +15,7 @@ imprime: imprime o vetor.*/
 #include <stdio.h>
 
 int v1[TAM];
+int kruger[15];
 int leitura(int *v){
     for(int i=0; i<TAM; i++){
         printf("Digite o %d.o elemento do vetor (indice %d) \n", i+1, i);
@@ -23,7 +24,7 @@ int leitura(int *v){
 }
 int imaior(int *v){
     int maior=0;
-    for(int i=0; i<TAM; i++){
+    for(int i=0; i<=TAM; i++){
         if (v[i]>maior){
             maior = i;
         }
